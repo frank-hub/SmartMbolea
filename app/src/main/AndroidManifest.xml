@@ -19,7 +19,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".Home" />
-        <activity android:name=".FertilizerPrograms"></activity>
+        <activity android:name=".FertilizerPrograms" />
+        <activity
+            android:name=".SoilTest"
+            android:label="@string/title_activity_soil_test"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
