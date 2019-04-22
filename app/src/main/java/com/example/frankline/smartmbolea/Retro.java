@@ -10,6 +10,10 @@ public class Retro {
     @SerializedName("farm_name")
     private String farm_name;
 
+    public Retro(){
+
+    }
+
     public Retro(Integer id,String program_name,String farm_name){
         this.id = id;
         this.program_name = program_name;

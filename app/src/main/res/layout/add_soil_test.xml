@@ -101,30 +101,37 @@
                             android:textStyle="bold"
                             android:height="40dp"/>
                         <EditText
+                            android:id="@+id/nitrogen"
                             android:gravity="right"
                             android:inputType="number"
                             android:padding="3dip" />
                         <EditText
+                            android:id="@+id/phos"
                             android:gravity="right"
                             android:inputType="number"
                             android:padding="3dip" />
                         <EditText
+                            android:id="@+id/potasium"
                             android:gravity="right"
                             android:inputType="number"
                             android:padding="3dip" />
                         <EditText
+                            android:id="@+id/calcium"
                             android:gravity="right"
                             android:inputType="number"
                             android:padding="3dip" />
                         <EditText
+                            android:id="@+id/mg"
                             android:gravity="right"
                             android:inputType="number"
                             android:padding="3dip" />
                         <EditText
+                            android:id="@+id/sulphur"
                             android:gravity="right"
                             android:inputType="number"
                             android:padding="3dip" />
                         <EditText
+                            android:id="@+id/boron"
                             android:gravity="right"
                             android:inputType="number"
                             android:padding="3dip" />
@@ -205,19 +212,20 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
                     <EditText
-                        android:id="@+id/soiest_name"
+                        android:id="@+id/layer_depth"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:ems="10"
+
                         android:layout_margin="5dp"
-                        android:inputType="text"
+                        android:inputType="number"
                         android:textColor="@color/darkblue"
                         android:hint="Layer Depth"
                         android:textColorHint="@color/darkblue"
                         />
                     <EditText
-                        android:id="@+id/sol_lab"
+                        android:id="@+id/cec"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -233,7 +241,7 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
                     <EditText
-                        android:id="@+id/soil_tesname"
+                        android:id="@+id/ec"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -245,7 +253,7 @@
                         android:textColorHint="@color/darkblue"
                         />
                     <EditText
-                        android:id="@+id/soil_l"
+                        android:id="@+id/ph"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -261,7 +269,7 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
                     <EditText
-                        android:id="@+id/soilest_name"
+                        android:id="@+id/date"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -273,7 +281,7 @@
                         android:textColorHint="@color/darkblue"
                         />
                     <EditText
-                        android:id="@+id/il_lab"
+                        android:id="@+id/bulk_density"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -288,7 +296,7 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
                 <EditText
-                    android:id="@+id/soil_tst_name"
+                    android:id="@+id/avg_temp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -300,7 +308,7 @@
                     android:textColorHint="@color/darkblue"
                     />
                 <EditText
-                    android:id="@+id/oil_lab"
+                    android:id="@+id/soil_texture"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -312,15 +320,15 @@
                     android:hint="Soil Texture"/>
             </LinearLayout>
                 <Button
-                    android:layout_width="wrap_content"
-                    android:background="@drawable/login"
-                    android:text="Sign In"
-                    android:textColor="@color/white"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:clickable="true"
-                    android:onClick="login"
-                    android:layout_height="match_parent" />
+                    android:id="@+id/submit_soil_test"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimary"
+                    android:shadowRadius="@android:integer/config_mediumAnimTime"
+                    android:text="Submit Soil Test"
+                    android:textAlignment="center"
+
+                    android:textColor="#fff"/>
             </LinearLayout>
         </ScrollView>
     </LinearLayout>
